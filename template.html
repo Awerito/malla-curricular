@@ -1,0 +1,93 @@
+<!-- Estos estilos no son necesarios, Joomla ya los tiene incorporados.
+     Descomenta esto para probar pero no lo pegues en el editor de Joomla
+<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+<script src="anijs-min.js"></script>
+-->
+<style>
+table.malla{width:100%;border-collapse:separate;border-spacing:5px}
+td.malla, th.malla{padding:10px}
+div.fix{overflow-x:auto}
+.Verde{color:#000!important;background-color:#98FB98!important}
+.Rojo{color:#000!important;background-color:#FFC0CB!important}
+.Amarillo{color:#000!important;background-color:#EEE8AA!important}
+.Semestre{color:#00484c!important;background-color:#c3e1f7!important;border:1px solid #00484c;width:12%!important}
+.Anio{color:#fff!important;background-color:#187bc6!important;border:1px solid #00484c}
+.Ramo{background-color:#fff;padding:10px;color:#187bc6;border:1px solid #00484c;width:14.6%}
+.Ramo:hover{cursor:pointer}
+.Final{width:44%}
+</style>
+<br>
+<div class="fix">
+    <table class="malla">
+        <tbody><tr> <th colspan="8" class="malla Anio">Ejemplo de Año de Tabla</th> </tr>
+            <tr>
+                <td class="malla Semestre">Semestre I</td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                      if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td colspan="2"
+                    class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+            </tr>
+            <tr>
+                <td class="malla Semestre">Semestre II</td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+                <td class="malla Ramo <!-- Inserta las clases prev y cont aqui -->"
+                    data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                    foo
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<!-- Estos estilos no son necesarios, Joomla ya los tiene incorporados.
+     Descomenta esto para probar pero no lo pegues en el editor de Joomla
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+-->
