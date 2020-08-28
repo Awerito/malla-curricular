@@ -65,4 +65,4 @@ que hayamos editado de `template.html`.
 
 > ¡¡¡No se debe guardar al salir si no haz realizado cambios, esto rompe el estilo css de la tabla!!!
 
-Cualquier duda dejar un [Issue](https://gitlab.com/Awerito/malla-curricular/-/issue)
+Cualquier duda dejar un Issue.
