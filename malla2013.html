@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Curricular</title>
+</head>
+<body>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <script src="anijs-min.js"></script>
+        <style>
+            table.malla{width:100%;border-collapse:separate;border-spacing:5px}
+            td.malla, th.malla{padding:10px}
+            div.fix{overflow-x:auto}
+            .Verde{color:#000!important;background-color:#98FB98!important}
+            .Rojo{color:#000!important;background-color:#FFC0CB!important}
+            .Amarillo{color:#000!important;background-color:#EEE8AA!important}
+            .Semestre{color:#00484c!important;background-color:#c3e1f7!important;border:1px solid #00484c;width:12%!important}
+            .Anio{color:#fff!important;background-color:#187bc6!important;border:1px solid #00484c}
+            .Ramo{background-color:#fff;padding:10px;color:#187bc6;border:1px solid #00484c;width:14.6%}
+            .Ramo:hover{cursor:pointer}
+            .Final{width:44%}
+        </style>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Primer Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre I</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevIntroduccionAlCalculo prevAlgebra"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIntroduccionALaMatematica">
+                        Introducción a la Matemática
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target">
+                        Taller de Introducción a la Ingeniería
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target">
+                        Habilidades Comunicativas Para Ingenieros
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                     if:click,do:$toggleClass Rojo,to:target">
+                        Deporte
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target">
+                        Formación General
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre II</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevCalculoDiferencialEIntegral contIntroduccionALaMatematica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIntroduccionAlCalculo;
+                                    if:click,do:$toggleClass Amarillo,to:.prevIntroduccionAlCalculo">
+                        Introducción al Cálculo
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevAlgebraSuperior prevProbabilidadYEstadistica prevEstructurasDiscretas contIntroduccionALaMatematica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contAlgebra;
+                                    if:click,do:$toggleClass Amarillo,to:.prevAlgebra">
+                        Álgebra
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevFisicaNewtoniana prevTermodinamica prevCienciaYTecnologiaDeLosMateriales"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIntroduccionALaFisica">
+                        Introducción a la Física/Laboratorio
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevTermodinamica prevCienciaYTecnologiaDeLosMateriales"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contQuimica">
+                        Química/Laboratorio
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPracticaDeVeranoI prevProgramacionAvanzada"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contProgramacion">
+                        Programación
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Segundo Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre III</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevCalculoEnVariasVariables prevElectromagnetismo contIntroduccionAlCalculo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contCalculoDiferencialEIntegral;
+                                    if:click,do:$toggleClass Amarillo,to:.prevCalculoDiferencialEIntegral">
+                        Cálculo Diferencial e Integral
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contAlgebra"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevAlgebraSuperior">
+                        Álgebra Superior
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevElectromagnetismo contIntroduccionALaFisica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contFisicaNewtoniana;
+                                    if:click,do:$toggleClass Amarillo,to:.prevFisicaNewtoniana">
+                        Física Newtoniana
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contAlgebra"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevEstructurasDiscretas">
+                        Estructuras Discretas
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevEstructurasDeDatosYAlgoritmos prevArquitecturaDeComputadores contProgramacion"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contProgramacionAvanzada;
+                                    if:click,do:$toggleClass Amarillo,to:.prevProgramacionAvanzada">
+                        Programación Avanzada
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre IV</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevEcuacionesDiferenciales prevInvestigacionOperativa contCalculoDiferencialEIntegral"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contCalculoEnVariasVariables;
+                                    if:click,do:$toggleClass Amarillo,to:.prevCalculoEnVariasVariables">
+                        Cálculo en Varias Variables
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevInferenciaEstadistica contAlgebra"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contProbabilidadYEstadistica;
+                                    if:click,do:$toggleClass Amarillo,to:.prevProbabilidadYEstadistica">
+                        Probabilidad y Estadística
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevElectrotecnia contFisicaNewtoniana contCalculoDiferencialEIntegral"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contElectromagnetismo;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectromagnetismo">
+                        Electromagnetismo/Laboratorio
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contIntroduccionALaFisica contQuimica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contTermodinamica;
+                                    if:click,do:$toggleClass Amarillo,to:.prevTermodinamica">
+                        Termodinámica
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevLenguajesDeProgramacion prevBasesDeDatos contProgramacionAvanzada"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contEstructurasDeDatosYAlgoritmos;
+                                    if:click,do:$toggleClass Amarillo,to:.prevEstructurasDeDatosYAlgoritmos">
+                        Estructuras de Datos y Algoritmos
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Tercer Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre V</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevCalculoNumerico contCalculoEnVariasVariables"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contEcuacionesDiferenciales;
+                                    if:click,do:$toggleClass Amarillo,to:.prevEcuacionesDiferenciales">
+                        Ecuaciones Diferenciales
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contProbabilidadYEstadistica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInferenciaEstadistica">
+                        Inferencia Estadística
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevDisenioDigital prevSistemasDeControlDeProcesos contElectromagnetismo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contElectrotecnia;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectrotecnia">
+                        Electrotecnia/Laboratorio
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contIntroduccionALaFisica contQuimica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevCienciaYTecnologiaDeLosMateriales">
+                        Ciencia y Tecnología de los Materiales
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevIngenieriaDeSistemas prevIngenieriaDeSoftware contEstructurasDeDatosYAlgoritmos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contLenguajesDeProgramacion;
+                                    if:click,do:$toggleClass Amarillo,to:.prevLenguajesDeProgramacion">
+                        Lenguajes de Programación
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre VI</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPlanificacionEstrategica"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contGestionDeEmpresas">
+                        Gestión de Empresas
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contEcuacionesDiferenciales"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevCalculoNumerico">
+                        Cálculo Numérico
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contElectrotecnia"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevDisenioDigital">
+                        Diseño Digital
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevSistemasOperativos contProgramacionAvanzada"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contArquitecturaDeComputadores;
+                                    if:click,do:$toggleClass Amarillo,to:.prevArquitecturaDeComputadores">
+                        Arquitectura de Computadores
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevTallerDeBasesDeDatos contEstructurasDeDatosYAlgoritmos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contBasesDeDatos;
+                                    if:click,do:$toggleClass Amarillo,to:.prevBasesDeDatos">
+                        Bases de Datos
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Cuarto Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre VII</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevEconomia">
+                        Economía
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevInvestigacionOperativaAvanzada contCalculoEnVariasVariables"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contInvestigacionOperativa;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInvestigacionOperativa">
+                        Investigación Operativa
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevSistemasDeInformacion contLenguajesDeProgramacion"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIngenieriaDeSistemas;
+                                    if:click,do:$toggleClass Amarillo,to:.prevIngenieriaDeSistemas">
+                        Ingeniería de Sistemas
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevRedesYComunicaciones prevSistemasDistribuidos contArquitecturaDeComputadores"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contSistemasOperativos;
+                                    if:click,do:$toggleClass Amarillo,to:.prevSistemasOperativos">
+                        Sistemas Operativos/Laboratorio
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevInteligenciaArtificial contBasesDeDatos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contTallerDeBasesDeDatos;
+                                    if:click,do:$toggleClass Amarillo,to:.prevTallerDeBasesDeDatos">
+                        Taller de Bases de Datos
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevPracticaDeVeranoI">
+                        Práctica de Verano I
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre VIII</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II prevPreparacionYEvaluacionDeProyectos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contContabilidadYCostos">
+                        Contabilidad y Costos
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contInvestigacionOperativa"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInvestigacionOperativaAvanzada">
+                        Investigación Operativa Avanzada
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contIngenieriaDeSistemas"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevSistemasDeInformacion">
+                        Sistemas de Información
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contElectrotecnia"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevSistemasDeControlDeProcesos">
+                        Sistemas de Control de Procesos/Laboratorio
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo prevElectivoProfesionalIII-IV prevElectivoProfesionalI-II contSistemasOperativos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevRedesYComunicaciones">
+                        Redes y Comunicaciones/Laboratorio
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Quinto Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre IX</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevPreparacionYEvaluacionDeProyectos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIngenieriaEconomicaYFinanciera">
+                        Ingeniería Económica y Financiera
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevTallerDeIngenieriaDeSoftware contLenguajesDeProgramacion"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contIngenieriaDeSoftware;
+                                    if:click,do:$toggleClass Amarillo,to:.prevIngenieriaDeSoftware">
+                        Ingeniería de Software
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV contSistemasOperativos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevSistemasDistribuidos">
+                        Sistemas Distribuidos
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target">
+                        Espíritu Emprendedor
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevInglesII"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contInglesI">
+                        Inglés I
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre X</td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevGestionDeLaInnovacion contGestionDeEmpresas"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contPlanificacionEstrategica;
+                                    if:click,do:$toggleClass Amarillo,to:.prevPlanificacionEstrategica">
+                        Planificación Estratégica
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevGestionDeLaInnovacion contContabilidadYCostos contIngenieriaEconomicaYFinanciera"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contPreparacionYEvaluacionDeProyectos;
+                                    if:click,do:$toggleClass Amarillo,to:.prevPreparacionYEvaluacionDeProyectos">
+                        Preparación y Evaluación de Proyectos
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV contIngenieriaDeSoftware"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevTallerDeIngenieriaDeSoftware">
+                        Taller de Ingeniería de Software
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV contTallerDeBasesDeDatos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInteligenciaArtificial">
+                        Inteligencia Artificial
+                    </td>
+                    <td class="malla Ramo prevElectivoProfesionalIII-IV prevInglesIII contInglesI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contInglesII;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInglesII">
+                        Inglés II
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <div class="fix">
+        <table class="malla">
+            <tbody><tr> <th colspan="8" class="malla Anio">Sexto Año</th> </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre XI</td>
+                    <td class="malla Ramo prevTallerDeTitulacionII"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contTallerDeTitulacionI;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalIII-IV">
+                        Taller de Titulación I
+                    </td>
+                    <td class="malla Ramo prevEmprendimientoTecnologico contPlanificacionEstrategica contPreparacionYEvaluacionDeProyectos"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contGestionDeLaInnovacion;
+                                    if:click,do:$toggleClass Amarillo,to:.prevGestionDeLaInnovacion">
+                        Gestión de la Innovación
+                    </td>
+                    <td class="malla Ramo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalI-II">
+                        Electivo Profesional I
+                    </td>
+                    <td class="malla Ramo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalI-II">
+                        Electivo Profesional II
+                    </td>
+                    <td class="malla Ramo prevInglesIV contInglesII"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Verde,to:.contInglesIII;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInglesIII">
+                        Inglés III
+                    </td>
+                    <td class="malla Ramo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalIII-IV">
+                        Práctica de Verano II
+                    </td>
+                </tr>
+                <tr>
+                    <td class="malla Semestre">Semestre XII</td>
+                    <td class="malla Ramo contTallerDeTitulacionI"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevTallerDeTitulacionII">
+                        Taller de Titulación II
+                    </td>
+                    <td class="malla Ramo contGestionDeLaInnovacion"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevEmprendimientoTecnologico">
+                        Emprendimiento Tecnológico
+                    </td>
+                    <td class="malla Ramo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalIII-IV">
+                        Electivo Profesional III
+                    </td>
+                    <td class="malla Ramo"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevElectivoProfesionalIII-IV">
+                        Electivo Profesional IV
+                    </td>
+                    <td colspan="2"
+                        class="malla Ramo contInglesIII"
+                        data-anijs="if:click,do:$removeClass Rojo Verde Amarillo,to:.Ramo;
+                                    if:click,do:$toggleClass Rojo,to:target;
+                                    if:click,do:$toggleClass Amarillo,to:.prevInglesIV">
+                        Inglés IV
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+</body>
+</html>
