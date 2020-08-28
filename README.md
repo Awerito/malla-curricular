@@ -3,7 +3,9 @@
 Este repositorio alberga la plantilla de las malla de la carrera [Ingeniería Civil 
 Informática](http://icinf.ulagos.cl/) de la [Universidad de Los Lagos](https://www.ulagos.cl/) 
 en formato [HTML](https://html.com/) para su plataforma de gestión de contenido en
-[Joomla!](https://www.joomla.org/) para los años 2013 y 2020.
+[Joomla!](https://www.joomla.org/) para los años
+[2013](http://icinf.ulagos.cl/index.php/carrera/2013/malla-curricular-2013) y
+[2020](http://icinf.ulagos.cl/index.php/carrera/2020/malla-curricular-2020).
 
 ## Descripción
 
