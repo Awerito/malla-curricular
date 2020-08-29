@@ -67,4 +67,9 @@ que hayamos editado de `template.html`.
 
 > ¡¡¡No se debe guardar al salir si no haz realizado cambios, esto rompe el estilo css de la tabla!!!
 
+## Definiciones
+
+- Previtura: Ramo/Asignatura necesaria para poder optar tomar un ramo en cuestión.
+- Continuidad: Ramo/Asignatura subsiguiente a una previatura, es decir, la contiuación de un ramo.
+
 Cualquier duda dejar un Issue.
