@@ -55,8 +55,8 @@ data-anijs="<--codigo generico-->;
 > </td>
 > ```
 
-Los estilos predefinidos para las tablas están en el tag `<style></style>` dado que
-[Joomla!](https://www.joomla.org/) aplica y borra este tag al guardar cambios.
+Los estilos predefinidos para las tablas están en el tag `<style></style>` dado queJoomla! aplica
+y borra este tag al guardar cambios.
 
 ## Guardar cambios en Joomla!
 
